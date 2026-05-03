@@ -1,7 +1,7 @@
 {
     "functions": {
         "api/index.php": {
-            "runtime": "vercel-php@0.6.1"
+            "runtime": "vercel-php@0.7.1"
         }
     },
     "routes": [
@@ -10,8 +10,8 @@
             "dest": "/public/$1"
         },
         {
-            "src": "/build/assets/(.*)",
-            "dest": "/public/build/assets/$1"
+            "src": "/build/(.*)",
+            "dest": "/public/build/$1"
         },
         {
             "src": "/(.*)",
